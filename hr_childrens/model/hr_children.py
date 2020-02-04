@@ -1,7 +1,7 @@
 
 #LFPV
 
-from odoo.osv import osv, fields
+from odoo import api, osv, fields, models,_
 
 
 class HrEmployee(osv.Model):
