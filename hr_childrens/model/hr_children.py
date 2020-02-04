@@ -1,10 +1,10 @@
 
 #LFPV
 
-from odoo import api, osv, fields, models,_
+from odoo import api,fields,models,_
 
 
-class HrEmployee(osv.Model):
+class HrEmployee(model.Model):
     """Inherit hr_employee to add date_start and to add yours childrens
     """
     _inherit = "hr.employee"
@@ -16,7 +16,7 @@ class HrEmployee(osv.Model):
     }
 
 
-class HrChildren(osv.Model):
+class HrChildren(model.Model):
     """Class to add object of childrens to employee
     """
     _name = "hr.children"
